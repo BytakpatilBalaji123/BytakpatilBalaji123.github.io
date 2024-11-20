@@ -3,26 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Student Portfolio</title>
     <style>
-        .cite{
-            background-color: yellow;
-            color: slateblue;
-            padding: auto;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header {
             text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #444;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li, .projects li {
+            background: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
-
 <body>
-    <h1>Balaji</h1>
-    <h3 style="color:blueviolet;">Life is a journey</h3>
-     <p class="cite">
-        Name: Bytakapatil Balaji <br>
-        Roll No: 22241A6608   <br>
-        Colleg: GRIET  <br>
+    <div class="container">
+        <header>
+            <h1>Balaji's Portfolio</h1>
+            <p>B.Tech Student | Passionate about Machine Learning and IoT</p>
+        </header>
 
-     </p>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I am Balaji, a B.Tech student passionate about Machine Learning and IoT. I enjoy solving problems and building projects that make a difference.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, Java, Kotlin</li>
+                <li>Frameworks: React, Android Development</li>
+                <li>Database: MongoDB, MySQL</li>
+                <li>Other: Google Cloud Platform, IoT Development</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>Book Rental Portal - A React-based web application for managing book rentals.</li>
+                <li>IoT Smart Home - A project to automate and monitor home appliances using IoT devices.</li>
+                <li>ML Sentiment Analysis - A Python-based sentiment analysis tool for social media comments.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hobbies</h2>
+            <p>When I'm not coding, I enjoy reading books, exploring new technologies, and playing chess.</p>
+        </div>
+    </div>
 </body>
 </html>
