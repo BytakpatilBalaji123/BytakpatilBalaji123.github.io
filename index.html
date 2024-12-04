@@ -1,81 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
-    <style>
-        body {
-            font-family:Times New Roman;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f213ca;
-            color: #000000;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-            background: #dac876;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        header {
-            text-align: center;
-            padding: 20px 0;
-            color:slateblue;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #000432;
-        }
-        .section {
-            margin: 20px 0;
-        }
-        .section h2 {
-            color: #555;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .skills ul, .projects ul {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
-</head>
-<body>
-    <a href="http://127.0.0.1:5501/index.html">Mystore</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ball.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1 style="color:red;">Balaji's Portfolio</h1>
-            <p>B.Tech Student | Passionate about  Web Development and Machine Learning </p>
-        </header>
+      <div class="header-row"> 
+        <div class="box"><h1>Your Name</h1></div>
+        <div class="box">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>Hello! I am Balaji, a B.Tech student passionate  Machine Learning. I enjoy solving problems and building projects that make a difference.</p>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
 
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li>Library e-Management System</li>
-                <li>Curiosity central project</li>
-            </ul>
+      <div class="row" id="home">
+        <div style="display: flex;padding-top: 50px;">
+          <div class="box">
+            <h1>Full Stack Developer</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
+              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
+              perferendis assumenda?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              neque est nihil ipsum error. Deserunt voluptas explicabo ea eum
+              quasi. Rem nisi molestias quia nesciunt incidunt numquam fugiat
+              perferendis assumenda?
+            </p>
+            <button>Button 1</button>
+            <button>Button 1</button>
+          </div>
+          <div class="box">
+            <img src="https://picsum.photos/id/2/400/400" />
+          </div>
         </div>
+      </div>
 
-        <div class="section">
-            <h2>Hobbies</h2>
-            <p>When I'm not coding, I enjoy reading books, exploring new technologies, and playing Games and Listening music.</p>
+      <div id="projects" class="row" style="background-color: lightcoral">
+        <h1>Projects</h1>
+        <div style="display: flex">
+          <div class="box">
+            <h3>Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
         </div>
-        <div class="section">
-        <h2>Mystore</h2>
-        <p>Explore my store</p>
+      </div>
+      <div id="services" class="row" style="background-color: lightblue">
+        <h1>Services</h1>
+        <div style="display: flex">
+          <div class="box">
+            <h3>Web App Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Mobile App Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
+
+          <div class="box">
+            <h3>Backend Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+          </div>
         </div>
+      </div>
+      <div id="about" class="row">
+        <h1>About</h1>
+        <h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint
+          optio labore a obcaecati. Ullam distinctio corrupti autem. Veritatis
+          ipsa veniam deserunt asperiores nesciunt at provident itaque
+          cupiditate vel dolor.
+        </h3>
+        <h2>Skills</h2>
+        <h3>Java, Python, Reactjs</h3>
+        <p>Display the logo of all the technologies you know.</p>
+      </div>
+      <div
+        id="contact"
+        class="row"
+        style="background-color: lightgoldenrodyellow"
+      >
+        <h1>Contact</h1>
+        <div style="display: flex">
+         
+
+          <div class="box">
+            <h3>Contact Form</h3>
+            <p>
+             <input type="text" placeholder="Enter Name">
+            </p>
+            <p>
+              <input type="email" placeholder="Enter Email">
+             </p>
+             <p>
+              <textarea rows="10" cols="60" placeholder="Enter message"></textarea>
+             </p>
+             <button>Send</button>
+          </div>
+
+          <div class="box">
+            <h3>Your/Company Name</h3>
+            <p>
+              <b>Address: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              quia nobis eligendi reiciendis. Esse a possimus eum est veritatis
+              aliquid ut eveniet. Et illum odio ut voluptates molestiae?
+              Perspiciatis, ab.
+            </p>
+            <p>
+              <b>Email Address: </b>sample@email.com
+            </p>
+            <p>
+              <b>Phone Number: </b>+91 343 445 6789
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">@copyright 2024. All rights reserved.</div>
     </div>
-    
-</body>
+  </body>
 </html>
