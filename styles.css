@@ -1,63 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
 .container {
-    position: fixed;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    scroll-behavior: smooth;
-    height: 100%;
-  }
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
-  .header-row {
-    background-color: orange;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-  }
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
 
-  .header-row .box {
-    padding: 10px;
-  }
+.logo h1 {
+  color: #333;
+}
 
-  .header-row li {
-    display: inline;
-    padding: 5px;
-    font-size: larger;
-  }
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 
-  .header-row a {
-    text-decoration: none;
-  }
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
 
-  .header-row a:hover {
-    text-decoration: underline;
-  }
+nav a:hover {
+  color: #007bff;
+}
 
-  .row {
-    padding: 100px;
-    height: 75%;
-  }
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
 
-  .row .box {
-    padding: 20px;
-    margin: 10px;
-  }
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
 
-  .footer {
-    padding: 20px;
-    margin: 0px;
-    background-color: black;
-    color: white;
-    font-size: large;
-  }
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
 
-  button {
-    background-color: teal;
-    padding: 10px;
-    color: white;
-    border: none;
-    border-radius: 10%;
-  }
+.hero-content button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #0056b3;
+}
+
+.carousel-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  padding: 20px;
+  background: #e9ecef;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-logos img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 40px;
+  padding: 30px 0;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #343a40;
+  color: white;
+  margin-top: 50px;
+}
