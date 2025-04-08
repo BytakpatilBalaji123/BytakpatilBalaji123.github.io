@@ -1,63 +1,89 @@
 .container {
-    position: fixed;
-    overflow: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    scroll-behavior: smooth;
-    height: 100%;
-  }
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* light gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  .header-row {
-    background-color: orange;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-  }
+.header-row {
+  background-color: #2c3e50; /* dark slate */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-  .header-row .box {
-    padding: 10px;
-  }
+.header-row .box {
+  padding: 10px;
+  color: #ecf0f1;
+}
 
-  .header-row li {
-    display: inline;
-    padding: 5px;
-    font-size: larger;
-  }
+.header-row li {
+  display: inline;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  color: #ecf0f1;
+}
 
-  .header-row a {
-    text-decoration: none;
-  }
+.header-row a {
+  text-decoration: none;
+  color: #ecf0f1;
+  transition: color 0.3s ease;
+}
 
-  .header-row a:hover {
-    text-decoration: underline;
-  }
+.header-row a:hover {
+  text-decoration: underline;
+  color: #f39c12;
+}
 
-  .row {
-    padding: 100px;
-    height: 75%;
-  }
+.row {
+  padding: 100px 50px;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-  .row .box {
-    padding: 20px;
-    margin: 10px;
-  }
+.row .box {
+  padding: 20px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
 
-  .footer {
-    padding: 20px;
-    margin: 0px;
-    background-color: black;
-    color: white;
-    font-size: large;
-  }
+.row .box:hover {
+  transform: scale(1.02);
+}
 
-  button {
-    background-color: teal;
-    padding: 10px;
-    color: white;
-    border: none;
-    border-radius: 10%;
-  }
+.footer {
+  padding: 20px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+button {
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
